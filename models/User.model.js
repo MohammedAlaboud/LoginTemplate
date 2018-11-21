@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-//reference for plugin installed: mongooseHidden (npmjs.com)
+//reference for plugin installed: mongooseHidden (nmpjs.com)
 var mongooseHidden = require('mongoose-hidden')(); //plugin has to be initialized with these extra parenthesis
 
 //minlength from mongoose api; used SchemaString minlength

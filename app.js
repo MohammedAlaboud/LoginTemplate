@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-//Post and get routes
+//routes 
 app.get('/', function(req, res) { //route to get index.html file
   res.render('index.html'); //automatically looks for and in a "views" directory 
 });
