@@ -21,12 +21,14 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-//server setup
+//Post and get routes
 app.get('/', function(req, res) { //route to get index.html file
   res.render('index.html'); //automatically looks for and in a "views" directory 
 });
 
+app.post('/', controller.register); //post located on roots page with a method register
 
+//server setup
 app.listen(port, function() {
   console.log('app listening on port ' + port);
 });
