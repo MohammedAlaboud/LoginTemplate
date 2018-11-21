@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-
+//reference for plugin installed: mongooseHidden (npmjs.com)
+var mongooseHidden = require('mongoose-hidden')(); //plugin has to be initialized with these extra parenthesis
 
 //minlength from mongoose api; used SchemaString minlength
 //other validators exist that check for specific inputs
@@ -20,6 +21,7 @@ var UserSchema = new Schema({
   },
   password: {
     type: String,
+    hide: true //uses mongooseHidden api
   }
 });
 
